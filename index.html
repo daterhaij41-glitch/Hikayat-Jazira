@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08131e">
+  <meta name="description" content="حكايات الجزيرة — عالم من الحكايات والدراما العربية بتجربة سينمائية مستوحاة من إسطنبول.">
+  <title>حكايات الجزيرة | Hikayat Al-Jazira</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="حكايات الجزيرة - الرئيسية">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span class="brand-copy"><strong>حكايات الجزيرة</strong><small>HIKAYAT AL-JAZIRA</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#home">الرئيسية</a><a href="#series">المسلسلات</a><a href="#world">عالم الحكايات</a><a href="#about">عن المنصة</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="بحث"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+      <a class="profile-link" href="#my-list"><span class="profile-dot">م</span><span>قائمتي</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div><div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <div class="eyebrow"><span></span> حكاية جديدة تبدأ من هنا</div>
+        <p class="hero-kicker">من ضفاف البوسفور إلى قلب الحكاية</p>
+        <h1>كل مدينة تخفي<br><em>حكاية...</em></h1>
+        <p class="hero-description">اكتشف عوالم من الدراما، أسراراً تتكشف، وشخصيات تبقى معك طويلاً. اقترب من الحكاية، ودع إسطنبول ترويها.</p>
+        <div class="hero-meta"><span class="meta-pill">دراما وتشويق</span><span>موسم أول</span><span class="meta-separator">•</span><span>2026</span></div>
+        <div class="hero-buttons">
+          <button class="button button-gold" data-open="bosphorus"><span class="play-triangle">▶</span> اكتشف الحكاية</button>
+          <a class="button button-ghost" href="#series">استكشف الأعمال <span>←</span></a>
+        </div>
+      </div>
+      <div class="hero-side-note"><span>41° 00′ N</span><i></i><span>28° 58′ E</span></div>
+      <div class="hero-bottom wrap"><span>إسطنبول، حيث تلتقي الحكايات</span><span class="scroll-hint">اكتشف المزيد <b>↓</b></span></div>
+    </section>
+
+    <section class="intro-strip wrap" id="world">
+      <div class="intro-symbol">✳</div><p>ليست مجرد مشاهدة... إنها <strong>رحلة داخل الحكاية.</strong></p>
+      <span class="intro-caption">قصص تُروى بشغف، وتفاصيل تُصنع بعناية</span>
+    </section>
+
+    <section class="section wrap" id="series">
+      <div class="section-heading">
+        <div><span class="section-overline">اختر وجهتك التالية</span><h2>حكايات تستحق <em>أن تُعاش</em></h2></div>
+        <a class="text-link" href="#catalog">كل الحكايات <span>←</span></a>
+      </div>
+      <div class="filter-row" id="filters" aria-label="تصفية الحكايات">
+        <button class="filter-chip selected" data-filter="all">الكل <span>06</span></button>
+        <button class="filter-chip" data-filter="drama">دراما</button>
+        <button class="filter-chip" data-filter="mystery">غموض</button>
+        <button class="filter-chip" data-filter="romance">رومانسي</button>
+        <button class="filter-chip" data-filter="history">تاريخي</button>
+      </div>
+      <div class="series-grid" id="seriesGrid">
+        <article class="series-card featured-card" data-category="drama" data-id="bosphorus">
+          <button class="poster-button" data-open="bosphorus" aria-label="تفاصيل ظلال البوسفور">
+            <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=85" alt="إطلالة على إسطنبول ومضيق البوسفور" loading="lazy">
+            <span class="poster-shade"></span><span class="poster-number">01</span><span class="poster-label">قريباً</span><span class="poster-play">▶</span>
+          </button>
+          <div class="card-info"><div class="card-meta"><span>دراما</span><span>•</span><span>8 حلقات</span></div><h3>ظلال البوسفور</h3><p>حين يعود الماضي مع أول ضوء للفجر.</p></div>
+        </article>
+        <article class="series-card" data-category="mystery" data-id="last-letter">
+          <button class="poster-button" data-open="last-letter" aria-label="تفاصيل الرسالة الأخيرة">
+            <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="مدينة ليلية تحت سماء غائمة" loading="lazy">
+            <span class="poster-shade"></span><span class="poster-number">02</span><span class="poster-play">▶</span>
+          </button>
+          <div class="card-info"><div class="card-meta"><span>غموض</span><span>•</span><span>6 حلقات</span></div><h3>الرسالة الأخيرة</h3><p>رسالة واحدة تقلب كل ما نعرفه.</p></div>
+        </article>
+        <article class="series-card" data-category="romance" data-id="between-two-seas">
+          <button class="poster-button" data-open="between-two-seas" aria-label="تفاصيل بين بحرين">
+            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" alt="قرية ساحلية متوسطية" loading="lazy">
+            <span class="poster-shade"></span><span class="poster-number">03</span><span class="poster-play">▶</span>
+          </button>
+          <div class="card-info"><div class="card-meta"><span>رومانسي</span><span>•</span><span>10 حلقات</span></div><h3>بين بحرين</h3><p>حكاية لقاء لم يكن في الحسبان.</p></div>
+        </article>
+        <article class="series-card" data-category="history" data-id="chronicles">
+          <button class="poster-button" data-open="chronicles" aria-label="تفاصيل دفاتر السلطان">
+            <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=900&q=85" alt="معالم تاريخية في إسطنبول" loading="lazy">
+            <span class="poster-shade"></span><span class="poster-number">04</span><span class="poster-play">▶</span>
+          </button>
+          <div class="card-info"><div class="card-meta"><span>تاريخي</span><span>•</span><span>12 حلقة</span></div><h3>دفاتر السلطان</h3><p>أسرار بين صفحات زمن بعيد.</p></div>
+        </article>
+        <article class="series-card" data-category="drama" data-id="old-neighborhood">
+          <button class="poster-button" data-open="old-neighborhood" aria-label="تفاصيل الحي القديم">
+            <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=85" alt="أبنية المدينة القديمة" loading="lazy">
+            <span class="poster-shade"></span><span class="poster-number">05</span><span class="poster-play">▶</span>
+          </button>
+          <div class="card-info"><div class="card-meta"><span>دراما</span><span>•</span><span>8 حلقات</span></div><h3>الحي القديم</h3><p>وجوه تعرف بعضها أكثر مما تظن.</p></div>
+        </article>
+        <article class="series-card" data-category="mystery" data-id="room-17">
+          <button class="poster-button" data-open="room-17" aria-label="تفاصيل الغرفة 17">
+            <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=900&q=85" alt="نافذة مضاءة في ليلة هادئة" loading="lazy">
+            <span class="poster-shade"></span><span class="poster-number">06</span><span class="poster-play">▶</span>
+          </button>
+          <div class="card-info"><div class="card-meta"><span>غموض</span><span>•</span><span>6 حلقات</span></div><h3>الغرفة 17</h3><p>باب مغلق... وحقيقة لا تريد الخروج.</p></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>لا توجد حكايات ضمن هذا التصنيف حالياً.</p>
+    </section>
+
+    <section class="city-banner" id="about">
+      <div class="city-banner-image"></div><div class="city-banner-overlay"></div>
+      <div class="city-banner-content wrap"><span class="section-overline">روح المكان</span><h2>إسطنبول ليست خلفية...<br><em>إنها بطلة الحكاية.</em></h2><p>أزقة تحمل الذاكرة، ومياه تفصل بين قارتين وتجمع ألف قصة. هنا يبدأ عالم حكايات الجزيرة.</p><a class="button button-ghost" href="#series">عد إلى الحكايات <span>←</span></a></div>
+      <div class="banner-stamp">ISTANBUL<br><small>THE CITY OF STORIES</small></div>
+    </section>
+
+    <section class="watchlist-section wrap" id="my-list">
+      <div class="watchlist-copy"><span class="section-overline">احتفظ بما تحب</span><h2>حكاياتك، <em>في مكان واحد.</em></h2><p>أضف الأعمال إلى قائمتك لتعود إليها متى شئت. تُحفظ قائمتك على هذا الجهاز.</p></div>
+      <div class="watchlist-preview" id="watchlistPreview"><span class="watchlist-icon">☆</span><span>قائمتك تبدأ من هنا</span><small>اضغط على علامة النجمة في تفاصيل أي حكاية</small></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark"><i></i><i></i><i></i></span><span class="brand-copy"><strong>حكايات الجزيرة</strong><small>HIKAYAT AL-JAZIRA</small></span></a><p>كل حكاية تستحق أن تُروى.</p><span>© 2026 حكايات الجزيرة</span></div></footer>
+
+  <div class="search-panel" id="searchPanel" aria-hidden="true"><div class="search-inner"><label for="searchInput">ابحث في عالم الحكايات</label><input id="searchInput" type="search" placeholder="اكتب اسم الحكاية أو تصنيفها..."><button id="closeSearch" aria-label="إغلاق">×</button></div></div>
+  <div class="modal-backdrop" id="detailModal" aria-hidden="true">
+    <section class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+      <div class="modal-poster"><img id="modalImage" src="" alt=""><span id="modalNumber"></span></div>
+      <div class="modal-content"><span class="section-overline" id="modalCategory"></span><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-facts" id="modalFacts"></div><div class="modal-actions"><button class="button button-gold" id="followButton">☆ أضف إلى قائمتي</button><button class="button button-ghost" id="trailerButton">عرض تفاصيل الحلقات</button></div><div class="episodes" id="episodes"></div></div>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
